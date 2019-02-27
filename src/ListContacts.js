@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./index.css";
 
 // class ListContacts extends Component {
@@ -26,5 +27,10 @@ function ListContacts(props) {
     </ol>
   );
 }
+
+ListContacts.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  onDeleteContact: PropTypes.func.isRequired
+};
 
 export default ListContacts;

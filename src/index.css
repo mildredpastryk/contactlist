@@ -117,10 +117,11 @@ body,
 .showing-contacts {
   text-align: center;
   margin: 20px 0;
+  color: green;
 }
 .showing-contacts button {
   color: blue;
-  background: transparent;
+  background: salmon;
   border: none;
   cursor: pointer;
   font-size: inherit;

@@ -49,7 +49,7 @@ body,
 .create-contact-avatar-input {
   min-width: 60px;
   height: 60px;
-  background-color: white;
+  background-color: rgb(32, 153, 153);
   background-image: url("./icons/person.svg");
   background-size: 32px 32px;
   background-position: center;
@@ -74,6 +74,7 @@ body,
   padding: 10px;
   text-transform: uppercase;
   font-size: inherit;
+  color: rgb(32, 153, 153);
   border: none;
   outline: 0;
 }

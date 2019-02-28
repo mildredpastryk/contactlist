@@ -94,7 +94,7 @@ body,
 .search-contacts {
   width: 100%;
   padding: 20px 20px 20px 60px;
-  background-image: url("./icons/search.svg");
+  background-image: url("../icons/search.svg");
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 1.2em;
@@ -103,7 +103,7 @@ body,
   outline: none;
 }
 
-.add-contact {
+.add-contact-orig {
   display: block;
   width: 73px;
   background: white;
@@ -112,6 +112,16 @@ body,
   background-position: center;
   background-size: 28px;
   font-size: 0;
+}
+.add-contact {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  text-align: center;
+  color: cyan;
+  background: rgb(59, 59, 14);
 }
 
 .showing-contacts {

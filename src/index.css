@@ -24,7 +24,7 @@ body,
 
 /* CreateContact */
 
-.close-create-contact {
+.close-create-contact-orig {
   display: block;
   width: 60px;
   height: 60px;
@@ -33,6 +33,17 @@ body,
   background-repeat: no-repeat;
   background-size: 30px;
   font-size: 0;
+}
+.close-create-contact {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width: 60px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: cyan;
+  background: rgb(59, 59, 14);
 }
 
 .create-contact-form {

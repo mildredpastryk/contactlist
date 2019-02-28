@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import ListContacts from "./ListContacts";
+import CreateContact from "./CreateContact";
 import "./index.css";
 
 class App extends Component {
   state = {
+    screen: "create", // list, create
     contacts: [
       {
         id: "ryan",
@@ -41,10 +43,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ListContacts
-          onDeleteContact={this.removeContact}
-          contacts={this.state.contacts}
-        />
+        {this.state.screen === "list" && (
+          <ListContacts
+            onDeleteContact={this.removeContact}
+            contacts={this.state.contacts}
+          />
+        )}
+        {this.state.screen === "create" && <CreateContact />}
       </div>
     );
   }
